@@ -1,0 +1,4 @@
+[includeIf "gitdir:~/git/"]
+  path = .gitconfig-company
+[includeIf "gitdir:~/gProjects/"]
+  path = .gitconfig-ismailmmd

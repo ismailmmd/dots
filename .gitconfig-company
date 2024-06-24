@@ -1,0 +1,7 @@
+[user]
+        name = Ismail Mohammed
+        email = ismail.mohammed@company.com
+[url "git@github.com:"]
+        insteadOf = https://github.com/
+[core]
+        excludesfile = /Users/ismailmohammed/.gitignore
