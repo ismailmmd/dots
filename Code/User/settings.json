@@ -1,0 +1,100 @@
+{
+    "files.insertFinalNewline": true,
+    "snyk.yesWelcomeNotification": false,
+    "files.autoSave": "onFocusChange",
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "npm.keybindingsChangedWarningShown": true,
+    "terminal.integrated.copyOnSelection": true,
+    "terminal.integrated.scrollback": 10000,
+    "terminal.integrated.cursorBlinking": true,
+    "terminal.integrated.cursorStyle": "underline",
+    "terminal.integrated.fontFamily": "MesloLGS NF",
+    "terminal.integrated.fontSize": 14,
+    "workbench.iconTheme": "vscode-icons",
+    "cSpell.userWords": [
+        "Allbound",
+        "Arackal",
+        "backoffice",
+        "deepcode",
+        "devbox",
+        "Dockerless",
+        "extention",
+        "ismailmmd",
+        "quickstart",
+        "Shaji",
+        "subminute",
+        "testbox",
+        "testid",
+        "thanos",
+        "tini",
+        "typebox",
+        "typegen",
+        "upsell",
+        "upserting",
+        "xsmall"
+    ],
+    "editor.stickyScroll.enabled": true,
+    "sonarlint.connectedMode.connections.sonarqube": [
+       
+    ],
+    "[typescript]": {
+        "editor.defaultFormatter": "vscode.typescript-language-features"
+    },
+    "[typescriptreact]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "editor.guides.bracketPairs": "active",
+    "git.confirmSync": false,
+    "[json]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "snyk.advanced.cliPath": "/Users/ismailmohammed/Library/Application Support/snyk-ls/snyk-macos",
+    "editor.accessibilitySupport": "off",
+    "[jsonc]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "githubPullRequests.pullBranch": "never",
+    "editor.fontFamily": "Fira Code, Menlo, Monaco, 'Courier New', monospace",
+    "editor.fontLigatures": false,
+    "files.trimTrailingWhitespace": true,
+    "github.copilot.enable": {
+        "*": true,
+        "plaintext": true,
+        "markdown": true,
+        "scminput": false
+    },
+    "explorer.autoRevealExclude": {
+        "**/node_modules": false
+    },
+    "snyk.trustedFolders": [
+        "/Users/ismailmohammed/git/round-robin-app",
+        "/Users/ismailmohammed/git/internal-sales-manager",
+        "/Users/ismailmohammed/git/partners-background-jobs",
+        "/Users/ismailmohammed/git/round-robin-api",
+        "/Users/ismailmohammed/git/provisioning-api",
+        "/Users/ismailmohammed/git/debezium",
+        "/Users/ismailmohammed/git/internal-upsell-manager"
+    ],
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "typescript.updateImportsOnFileMove.enabled": "always",
+    "window.zoomLevel": 1,
+    "sonarlint.rules": {
+        "javascript:S4138": {
+            "level": "off"
+        },
+        "typescript:S1301": {
+            "level": "on"
+        }
+    },
+    "git.autofetch": true,
+    "terminal.integrated.experimentalInlineChat": true,
+    "diffEditor.ignoreTrimWhitespace": false,
+    "livePreview.defaultPreviewPath": "Untitled-1",
+    "[html]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "github.copilot.editor.enableAutoCompletions": true,
+    "github.copilot.preferredAccount": "ismailmmd",
+}

@@ -1,0 +1,81 @@
+// Place your key bindings in this file to override the defaultsauto[]
+[
+    {
+        "key": "ctrl+numpad_subtract",
+        "command": "workbench.action.navigateBack",
+        "when": "canNavigateBack"
+    },
+    {
+        "key": "ctrl+-",
+        "command": "-workbench.action.navigateBack",
+        "when": "canNavigateBack"
+    },
+    {
+        "key": "ctrl+numpad_add",
+        "command": "workbench.action.navigateForward",
+        "when": "canNavigateForward"
+    },
+    {
+        "key": "ctrl+shift+-",
+        "command": "-workbench.action.navigateForward",
+        "when": "canNavigateForward"
+    },
+    {
+        "key": "cmd+[",
+        "command": "workbench.action.navigateBack",
+        "when": "canNavigateBack"
+    },
+    {
+        "key": "cmd+]",
+        "command": "workbench.action.navigateForward",
+        "when": "canNavigateForward"
+    },
+    {
+        "key": "ctrl",
+        "command": "workbench.action.holdLockedScrolling"
+    },
+    {
+        "key": "shift+alt+/",
+        "command": "github.copilot.terminal.suggestCommand",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "cmd+i",
+        "command": "-github.copilot.terminal.suggestCommand",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "alt+c alt+m",
+        "command": "github.copilot.terminal.generateCommitMessage"
+    },
+    {
+        "key": "alt+cmd+h",
+        "command": "workbench.action.terminal.chat.start",
+        "when": "inlineChatHasProvider && terminalFocusInAny && terminalHasBeenCreated || inlineChatHasProvider && terminalFocusInAny && terminalProcessSupported"
+    },
+    {
+        "key": "cmd+i",
+        "command": "-workbench.action.terminal.chat.start",
+        "when": "inlineChatHasProvider && terminalFocusInAny && terminalHasBeenCreated || inlineChatHasProvider && terminalFocusInAny && terminalProcessSupported"
+    },
+    {
+        "key": "alt+cmd+h",
+        "command": "workbench.action.terminal.chat.focusInput",
+        "when": "terminalChatFocus && !inlineChatFocused"
+    },
+    {
+        "key": "cmd+i",
+        "command": "-workbench.action.terminal.chat.focusInput",
+        "when": "terminalChatFocus && !inlineChatFocused"
+    },
+    {
+        "key": "alt+cmd+h",
+        "command": "workbench.action.chat.startVoiceChat",
+        "when": "chatIsEnabled && hasSpeechProvider && inChatInput && !chatSessionRequestInProgress && !editorFocus && !inlineChatHasActiveRequest && !inlineVoiceChatInProgress && !notebookEditorFocused && !quickVoiceChatInProgress && !terminalChatActiveRequest && !terminalVoiceChatInProgress && !voiceChatGettingReady && !voiceChatInEditorInProgress && !voiceChatInViewInProgress || chatIsEnabled && hasSpeechProvider && inlineChatFocused && !chatSessionRequestInProgress && !editorFocus && !inlineChatHasActiveRequest && !inlineVoiceChatInProgress && !notebookEditorFocused && !quickVoiceChatInProgress && !terminalChatActiveRequest && !terminalVoiceChatInProgress && !voiceChatGettingReady && !voiceChatInEditorInProgress && !voiceChatInViewInProgress"
+    },
+    {
+        "key": "cmd+i",
+        "command": "-workbench.action.chat.startVoiceChat",
+        "when": "chatIsEnabled && hasSpeechProvider && inChatInput && !chatSessionRequestInProgress && !editorFocus && !inlineChatHasActiveRequest && !inlineVoiceChatInProgress && !notebookEditorFocused && !quickVoiceChatInProgress && !terminalChatActiveRequest && !terminalVoiceChatInProgress && !voiceChatGettingReady && !voiceChatInEditorInProgress && !voiceChatInViewInProgress || chatIsEnabled && hasSpeechProvider && inlineChatFocused && !chatSessionRequestInProgress && !editorFocus && !inlineChatHasActiveRequest && !inlineVoiceChatInProgress && !notebookEditorFocused && !quickVoiceChatInProgress && !terminalChatActiveRequest && !terminalVoiceChatInProgress && !voiceChatGettingReady && !voiceChatInEditorInProgress && !voiceChatInViewInProgress"
+    }
+]
