@@ -135,6 +135,7 @@ plugins=(
 	z
 	zsh-autosuggestions
 	zsh-syntax-highlighting
+	httpie
 )
 
 source $ZSH/oh-my-zsh.sh
