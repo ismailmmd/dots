@@ -15,7 +15,7 @@ autoload -U compinit; compinit
 
 ##### END #####
 
-##### COMPANY - CONFIGURATION #####
+##### FUNCTIONS #####
 
 # updates to the node version specified in the .nvmrc file of that folder,
 # skips and acts as normal cd if no .nvmrc file is present
@@ -49,6 +49,31 @@ fi
 #Custom git commit with prefixed branch name
 commit () {
         git commit $2 -m "$(git branch --show-current ): $1"
+}
+
+# Function to have commits and Task Link as PR description 
+gh_pr_create() {
+  local template_path=".github/pull_request_template.md"
+  local body=""
+  
+  local commit_list=$(git log origin/master..HEAD --oneline | sed 's/^/- /')
+  local ticket=$(git rev-parse --abbrev-ref HEAD | grep -oE 'SPRK-[0-9]+' | head -1)
+  
+  if [ -f "$template_path" ]; then
+    body=$(perl -pe "s|<!-- commits -->|### Changes to this PR\\n$commit_list|g" "$template_path")
+    
+    if [ -n "$ticket" ]; then
+      body=$(perl -pe "s|<!-- ticket -->|https://ismail.atlassian.net/browse/$ticket|g" <<< "$body")
+    fi
+  else
+    body="## Changes in this PR\\n\\n$commit_list"
+
+    if [ -n "$ticket" ]; then
+      body="$body\\n\\nTicket: https://ismail.atlassian.net/browse/$ticket" 
+    fi
+  fi
+
+  gh pr create --web --body "$body"
 }
 
 ##### END #####
@@ -129,13 +154,20 @@ ENABLE_CORRECTION="true"
 plugins=(
 	git
 	macos
-    	npm
-    	history
-    	history-substring-search
+    npm
+    history
+    history-substring-search
 	z
 	zsh-autosuggestions
 	zsh-syntax-highlighting
 	httpie
+    brew
+    docker
+    composer
+    nvm
+    node
+    jake-node
+    npm
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -166,6 +198,7 @@ alias zshconfig="nano ~/.zshrc"
 alias ohmyzsh="nano ~/.oh-my-zsh"
 alias devbox="nocorrect devbox"
 alias pre-commit="bash .git/hooks/pre-commit"
+alias ccat='pygmentize -g -O linenos=1'
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
